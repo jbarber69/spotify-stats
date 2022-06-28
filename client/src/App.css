@@ -1,0 +1,289 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #f8f8f8;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: calc(10px + 2vmin);
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  color: black
+}
+
+.spotify-button {
+  background-color: #1DB954;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.5em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 5px;
+  padding-top: 5px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  margin: 0px;
+}
+
+tr {
+  text-align: left;
+}
+
+.site_header {
+  display: none;
+}
+
+.artist-image {
+  border-radius: 100%;
+  width: 30vw;
+  height: 30vw;
+}
+
+.artists {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.artist {
+  margin: 4px;
+  flex: 0 1 calc(40% - 8px);
+  transition: transform .5s;
+}
+
+.artist:hover {
+  transform: scale(1.05);
+}
+
+.artist-name {
+  font-size: 0.8rem;
+}
+
+.selected {
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+
+.top-header {
+  display: flex;
+  flex-direction: column;
+}
+
+th {
+  padding-right: 10px;
+}
+
+h3{
+  font-size: 0.7rem
+}
+
+h2{
+  font-size: 1.5rem
+}
+
+p{
+  font-size: 0.9rem;
+}
+
+.main-content {
+  width: 100vw;
+}
+
+.nav-menu {
+  align-self: center;
+}
+
+.track {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-left: 12px;
+  padding-bottom: 15px;
+}
+
+.album-art {
+  width: 50px;
+  height: 50px;
+}
+
+h4 {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.track-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.album-details {
+  font-size: 0.8rem;
+  margin-left: 0.5rem;
+  margin-bottom: 0px;
+  margin-top: 0.2rem;
+}
+
+.small-details {
+  display: flex;
+}
+
+.nav-text:hover {
+  color: #1DB954;
+}
+
+.site_header__mobile{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-half-mobile{
+  width: 95vw;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.albumname{
+  display: none;
+}
+
+@media (min-width: 768px) {
+
+  .artist {
+    flex: 0 1 calc(15% - 8px);
+  }
+
+  .artist-image {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .artist-name {
+    font-size: 1rem;
+  }
+
+  .top-header {
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 30px;
+  }
+
+  .spotify-button {
+    border-radius: 20px;
+    font-size: 1em;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+  }
+
+  th {
+    padding-right: 40px;
+  }
+
+  h1{
+    font-size: 2em;
+  }
+
+  h2{
+    font-size: 1.5em;
+  }
+
+  h3{
+    font-size: 1.17em;
+  }
+
+  p, h4{
+    font-size: inherit;
+  }
+
+  .site_header {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 20px;
+  }
+
+  .site_header__mobile{
+    display: none;
+  }
+
+  .album-art {
+    width: 60px;
+    height: 60px;
+  }
+
+  .track{
+    margin-left: 30px;
+    padding-bottom: 20px;
+  }
+
+  h4{
+    margin-left: 1rem
+  }
+
+  .album-details{
+    font-size: 1rem;
+    margin-left: 1rem;
+  }
+
+  .albumname{
+    display: block;
+  }
+
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
