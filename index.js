@@ -42,6 +42,7 @@ app.get('/login', (req, res) => {
     const state = generateRandomString(16)
     res.cookie(stateKey, state)
 
+
     const scope = 'user-read-private user-read-email user-top-read user-read-recently-played'
 
     const queryParams = querystring.stringify({
@@ -51,6 +52,8 @@ app.get('/login', (req, res) => {
         state: state,
         scope: scope
     })
+
+    console.log('login', queryParams)
 
     res.redirect(`https://accounts.spotify.com/authorize?${queryParams}`)
 })
