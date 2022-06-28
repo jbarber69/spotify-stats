@@ -59,6 +59,8 @@ app.get('/login', (req, res) => {
 })
 
 app.get('/callback', (req, res) => {
+
+    console.log('callback')
     const code = req.query.code || null;
 
     axios({
@@ -84,7 +86,7 @@ app.get('/callback', (req, res) => {
                     expires_in
                 });
 
-                res.redirect(`${FRONTEND_URI}${queryParams}`);
+                res.redirect(`${FRONTEND_URI}/${queryParams}`);
 
             } else {
                 res.redirect(`/?${querystring.stringify({ error: 'invalid_token' })}`);
