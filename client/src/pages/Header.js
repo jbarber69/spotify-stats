@@ -29,7 +29,7 @@ const Header = () => {
                             <th><Link to="/"><h3 className='nav-text'>home</h3></Link></th>
                             <th><Link to="/top-artists"><h3 className='nav-text'>top artists</h3></Link></th>
                             <th><Link to="/top-tracks"><h3 className='nav-text'>top tracks</h3></Link></th>
-                            <th><h3 className='nav-text inactive'>recently played</h3></th>
+                            <th><Link to="/recently-played"><h3 className='nav-text'>recently played</h3></Link></th>
                         </tr>
                     </thead>)}
                 </table>
