@@ -12,7 +12,7 @@ const Homepage = () => {
                     <thead>
                         <tr><th><Link to='top-artists'><h2 className='nav-text'>top artists</h2></Link></th></tr>
                         <tr><th><Link to='top-tracks'><h2 className='nav-text'>top tracks</h2></Link></th></tr>
-                        <tr><th><Link to='recently-played'><h2 className='nav-text'>recently played</h2></Link></th></tr>
+                        <tr><th><h2 className='nav-text inactive'>recently played</h2></th></tr>
                     </thead>
                 </table>
             </div>
